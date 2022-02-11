@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'GoodPro';
+  src: url('../fonts/FFGoodPro-Regular.eot');
+  src: local('☺'), url('../fonts/FFGoodPro-Regular.woff') format('woff'), url('../fonts/FFGoodPro-Regular.ttf') format('truetype'), url('../fonts/FFGoodPro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-size: 10px;
+  font-family: 'GoodPro',sans-serif;
+}
+$light-green:#E5F5E0;
+$green:#72BF44;
+$black:#000;
+$white:#fff;
+$lime:#B4DFA2;
+$grey:#E5E5E5;
+$light-grey:#F8F8F8;
+$red:#CC0E00;
+$animation:all 0.3s ease;
+.container{
+  max-width: 1440px;
+  padding: 0 25px;
+  margin:0 auto;
+}
+body{
+  margin: 0;
+}
+.colored-button,.transparent-button{
+  color:$white;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  background: $green;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid $green;
+  transition: $animation;
+  white-space: nowrap;
+}
+.transparent-button{
+  color:$green;
+  background: none;
+  transition: $animation;
+  border: none;
+}
+.colored-button:hover{
+  background:none;
+  color:$green;
+  transition: $animation;
+}
+.transparent-button:hover{
+  background: $green;
+  color:$white;
+  transition: $animation;
+}
+.dropdown-list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__first{
+    display: flex;
+    position: relative;
+    p{
+      margin: auto 10px;
+    }
+    svg{
+      margin:auto 0;
+    }
+  }
+  .submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background: $white;
+    opacity: 0;
+    transition: $animation;
+    li{
+      margin: 10px 15px 10px 0;
+      p{
+        margin: auto 10px;
+      }
+      svg{
+        margin:auto 0;
+      }
+    }
+  }
+}
+.dropdown-list:hover{
+  .submenu{
+    opacity: 1;
+    transition: $animation;
+  }
+}
+header{
+  background: $light-grey;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+      display: block;
+      padding: 20px 0;
+    }
+    &__search{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 20px 0 70px;
+      padding: 20px 0;
+      input{
+        background: #fff;
+        border: 1px solid $lime;
+        color:$black;
+        font-size: 1.4rem;
+        padding: 12px 16px;
+        border-radius: 4px;
+        outline: none;
+        box-sizing: border-box;
+        width: 100%;
+        margin:0 20px 0 0;
+      }
+      button{
+        padding: 12px 32px;
+        background: $light-green;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid $light-green;
+        box-sizing: border-box;
+        transition: $animation;
+        display: flex;
+        svg{
+          align-items: center;
+        }
+      }
+      button:hover{
+        border: 1px solid $lime;
+        background: $white;
+        transition: $animation;
+      }
+    }
+    &__buttons{
+      display: flex;
+      padding: 20px 20px;
+      border-left: 1px solid $grey;
+      border-right: 1px solid $grey;
+      .colored-button{
+        margin:0 20px 0 0;
+        padding: 10px 23px;
+      }
+      .transparent-button{
+        padding: 10px 23px;
+      }
+    }
+    &__cart{
+      display: flex;
+      margin: 20px 0 20px 20px;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      &__logo{
+        display: flex;
+        padding: 0 10px 0 0;
+        position: relative;
+        span{
+          position: absolute;
+          color:$white;
+          background:$red;
+          margin: 0;
+          top:-6px;
+          right: 3px;
+          font-size: 0.8rem;
+          border-radius: 20px;
+          padding: 3px 4.5px;
+        }
+        svg{
+          transition: $animation;
+        }
+      }
+      p{
+        color:$black;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+    &__cart:hover{
+      .header__cart__logo{
+        svg{
+          transform: scale(1.2,1.2);
+          transition: $animation;
+        }
+      }
+    }
+  }
+}
+#Menu{
+  border-top:1px solid $grey;
+  border-bottom: 1px solid $grey;
+  .menu{
+    nav{
+      ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 19px 0;
+        margin: 0;
+        li{
+          display: flex;
+          a{
+            text-decoration: none;
+            font-weight: 400;
+            color:$black;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 576px){
+
+}
+@media screen and (max-width: 320px){
+
+}

@@ -1,0 +1,279 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "GoodPro";
+  src: url("../fonts/FFGoodPro-Regular.eot");
+  src: local("☺"), url("../fonts/FFGoodPro-Regular.woff") format("woff"), url("../fonts/FFGoodPro-Regular.ttf") format("truetype"), url("../fonts/FFGoodPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-size: 10px;
+  font-family: "GoodPro", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+}
+
+.colored-button, .transparent-button {
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  background: #72BF44;
+  cursor: pointer;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #72BF44;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.transparent-button {
+  color: #72BF44;
+  background: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.colored-button:hover {
+  background: none;
+  color: #72BF44;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.transparent-button:hover {
+  background: #72BF44;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dropdown-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.dropdown-list__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.dropdown-list__first p {
+  margin: auto 10px;
+}
+.dropdown-list__first svg {
+  margin: auto 0;
+}
+.dropdown-list .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.dropdown-list .submenu li {
+  margin: 10px 15px 10px 0;
+}
+.dropdown-list .submenu li p {
+  margin: auto 10px;
+}
+.dropdown-list .submenu li svg {
+  margin: auto 0;
+}
+
+.dropdown-list:hover .submenu {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header {
+  background: #F8F8F8;
+}
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header__logo {
+  display: block;
+  padding: 20px 0;
+}
+header .header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin: 0 20px 0 70px;
+  padding: 20px 0;
+}
+header .header__search input {
+  background: #fff;
+  border: 1px solid #B4DFA2;
+  color: #000;
+  font-size: 1.4rem;
+  padding: 12px 16px;
+  border-radius: 4px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0 20px 0 0;
+}
+header .header__search button {
+  padding: 12px 32px;
+  background: #E5F5E0;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #E5F5E0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header__search button svg {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header__search button:hover {
+  border: 1px solid #B4DFA2;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px;
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+}
+header .header__buttons .colored-button {
+  margin: 0 20px 0 0;
+  padding: 10px 23px;
+}
+header .header__buttons .transparent-button {
+  padding: 10px 23px;
+}
+header .header__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 20px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+header .header__cart__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px 0 0;
+  position: relative;
+}
+header .header__cart__logo span {
+  position: absolute;
+  color: #fff;
+  background: #CC0E00;
+  margin: 0;
+  top: -6px;
+  right: 3px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  padding: 3px 4.5px;
+}
+header .header__cart__logo svg {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .header__cart p {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+header .header__cart:hover .header__cart__logo svg {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#Menu {
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+#Menu .menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 19px 0;
+  margin: 0;
+}
+#Menu .menu nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#Menu .menu nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.6rem;
+}
