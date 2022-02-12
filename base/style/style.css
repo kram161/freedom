@@ -209,7 +209,7 @@ header .header__cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0 20px 20px;
+  margin: auto 0 auto 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -276,4 +276,72 @@ header .header__cart:hover .header__cart__logo svg {
   font-weight: 400;
   color: #000;
   font-size: 1.6rem;
+}
+
+#Investments {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#F3F7F9));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F3F7F9 100%);
+}
+#Investments .investments {
+  width: 100%;
+  min-height: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 155px 0 136px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#Investments .investments__description {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+}
+#Investments .investments__description h3, #Investments .investments__description p {
+  font-size: 6rem;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+#Investments .investments__description p {
+  font-size: 2.4rem;
+}
+#Investments .investments__description a {
+  max-width: 280px;
+  padding: 14px 0;
+}
+#Investments .investments__description__ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 45px 0 0 5px;
+}
+#Investments .investments__description__ratings__unit {
+  margin: 0 35px 0 0;
+  text-align: center;
+}
+#Investments .investments__description__ratings__unit p {
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: 400;
+  padding: 20px 0 0 0;
+}
+#Investments .investments__img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 804px;
+  max-height: 624px;
+}
+#Investments .investments__img img:nth-child(1) {
+  z-index: 2;
+}
+#Investments .investments__img img:nth-child(2) {
+  right: 52px;
+  z-index: 1;
 }

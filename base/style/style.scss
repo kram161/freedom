@@ -161,7 +161,7 @@ header{
     }
     &__cart{
       display: flex;
-      margin: 20px 0 20px 20px;
+      margin: auto 0 auto 20px;
       justify-content: space-between;
       align-items: center;
       text-decoration: none;
@@ -219,6 +219,67 @@ header{
             font-size: 1.6rem;
           }
         }
+      }
+    }
+  }
+}
+#Investments{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F3F7F9 100%);
+  .investments{
+    width: 100%;
+    min-height: 720px;
+    display: flex;
+    position: relative;
+    padding: 155px 0 136px 0;
+    box-sizing: border-box;
+    &__description{
+      position: relative;
+      z-index: 3;
+      max-width: 700px;
+      h3,p{
+        font-size: 6.0rem;
+        font-weight: 400;
+        color:$black;
+        margin: 0;
+        padding: 0 0 40px 0;
+      }
+      p{
+        font-size: 2.4rem;
+      }
+      a{
+        max-width: 280px;
+        padding: 14px 0;
+      }
+      &__ratings{
+        display: flex;
+        justify-content: flex-start;
+        padding: 45px 0 0 5px;
+        &__unit{
+          margin:0 35px 0 0;
+          text-align: center;
+          p{
+            font-size: 1.3rem;
+            color:$black;
+            font-weight: 400;
+            padding: 20px 0 0 0;
+          }
+        }
+      }
+    }
+    &__img{
+      img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 804px;
+        max-height: 624px;
+      }
+      img:nth-child(1){
+        z-index: 2;
+      }
+      img:nth-child(2){
+        right: 52px;
+        z-index: 1;
       }
     }
   }
