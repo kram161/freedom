@@ -105,6 +105,7 @@ body {
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 3;
 }
 .dropdown-list .submenu li {
   margin: 10px 15px 10px 0;
@@ -311,6 +312,8 @@ header .header__cart:hover .header__cart__logo svg {
 #Investments .investments__description a {
   max-width: 280px;
   padding: 14px 0;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 #Investments .investments__description__ratings {
   display: -webkit-box;
@@ -344,4 +347,362 @@ header .header__cart:hover .header__cart__logo svg {
 #Investments .investments__img img:nth-child(2) {
   right: 52px;
   z-index: 1;
+}
+
+#Partners .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px 0 140px 0;
+}
+#Partners .partners svg, #Partners .partners img {
+  margin: 0 22.5px;
+}
+
+#Quick-start .quick-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#Quick-start .quick-start img {
+  margin: 0 100px 0 0;
+  max-width: 412px;
+  max-height: 522px;
+}
+#Quick-start .quick-start__description h3 {
+  font-size: 6rem;
+  color: #000;
+  font-weight: 400;
+  margin: 0;
+  padding: 71px 0 40px 0;
+}
+#Quick-start .quick-start__description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+#Quick-start .quick-start__description ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 400;
+  padding: 0 0 20px 0;
+}
+#Quick-start .quick-start__description a {
+  margin: 50px 0 0 0;
+  padding: 14px 0;
+  width: 330px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+#IPO .ipo, #IPO .etf, #IPO .deposit, #IPO .sentence, #ETF .ipo, #ETF .etf, #ETF .deposit, #ETF .sentence, #Deposit .ipo, #Deposit .etf, #Deposit .deposit, #Deposit .sentence, #Sentence .ipo, #Sentence .etf, #Sentence .deposit, #Sentence .sentence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding: 140px 0 0 0;
+}
+#IPO .ipo__description h3, #IPO .ipo__description p, #IPO .etf__description h3, #IPO .etf__description p, #IPO .deposit__description h3, #IPO .deposit__description p, #IPO .sentence__description h3, #IPO .sentence__description p, #ETF .ipo__description h3, #ETF .ipo__description p, #ETF .etf__description h3, #ETF .etf__description p, #ETF .deposit__description h3, #ETF .deposit__description p, #ETF .sentence__description h3, #ETF .sentence__description p, #Deposit .ipo__description h3, #Deposit .ipo__description p, #Deposit .etf__description h3, #Deposit .etf__description p, #Deposit .deposit__description h3, #Deposit .deposit__description p, #Deposit .sentence__description h3, #Deposit .sentence__description p, #Sentence .ipo__description h3, #Sentence .ipo__description p, #Sentence .etf__description h3, #Sentence .etf__description p, #Sentence .deposit__description h3, #Sentence .deposit__description p, #Sentence .sentence__description h3, #Sentence .sentence__description p {
+  font-size: 6rem;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+#IPO .ipo__description h3 span, #IPO .ipo__description p span, #IPO .etf__description h3 span, #IPO .etf__description p span, #IPO .deposit__description h3 span, #IPO .deposit__description p span, #IPO .sentence__description h3 span, #IPO .sentence__description p span, #ETF .ipo__description h3 span, #ETF .ipo__description p span, #ETF .etf__description h3 span, #ETF .etf__description p span, #ETF .deposit__description h3 span, #ETF .deposit__description p span, #ETF .sentence__description h3 span, #ETF .sentence__description p span, #Deposit .ipo__description h3 span, #Deposit .ipo__description p span, #Deposit .etf__description h3 span, #Deposit .etf__description p span, #Deposit .deposit__description h3 span, #Deposit .deposit__description p span, #Deposit .sentence__description h3 span, #Deposit .sentence__description p span, #Sentence .ipo__description h3 span, #Sentence .ipo__description p span, #Sentence .etf__description h3 span, #Sentence .etf__description p span, #Sentence .deposit__description h3 span, #Sentence .deposit__description p span, #Sentence .sentence__description h3 span, #Sentence .sentence__description p span {
+  color: #72BF44;
+}
+#IPO .ipo__description p, #IPO .etf__description p, #IPO .deposit__description p, #IPO .sentence__description p, #ETF .ipo__description p, #ETF .etf__description p, #ETF .deposit__description p, #ETF .sentence__description p, #Deposit .ipo__description p, #Deposit .etf__description p, #Deposit .deposit__description p, #Deposit .sentence__description p, #Sentence .ipo__description p, #Sentence .etf__description p, #Sentence .deposit__description p, #Sentence .sentence__description p {
+  font-size: 2.4rem;
+}
+#IPO .ipo__description p a, #IPO .etf__description p a, #IPO .deposit__description p a, #IPO .sentence__description p a, #ETF .ipo__description p a, #ETF .etf__description p a, #ETF .deposit__description p a, #ETF .sentence__description p a, #Deposit .ipo__description p a, #Deposit .etf__description p a, #Deposit .deposit__description p a, #Deposit .sentence__description p a, #Sentence .ipo__description p a, #Sentence .etf__description p a, #Sentence .deposit__description p a, #Sentence .sentence__description p a {
+  font-size: 2.4rem;
+  color: #72BF44;
+  text-decoration: none;
+  padding: 0;
+}
+#IPO .ipo__description p a:hover, #IPO .etf__description p a:hover, #IPO .deposit__description p a:hover, #IPO .sentence__description p a:hover, #ETF .ipo__description p a:hover, #ETF .etf__description p a:hover, #ETF .deposit__description p a:hover, #ETF .sentence__description p a:hover, #Deposit .ipo__description p a:hover, #Deposit .etf__description p a:hover, #Deposit .deposit__description p a:hover, #Deposit .sentence__description p a:hover, #Sentence .ipo__description p a:hover, #Sentence .etf__description p a:hover, #Sentence .deposit__description p a:hover, #Sentence .sentence__description p a:hover {
+  border-bottom: 1px solid #72BF44;
+}
+#IPO .ipo__description__information, #IPO .etf__description__information, #IPO .deposit__description__information, #IPO .sentence__description__information, #ETF .ipo__description__information, #ETF .etf__description__information, #ETF .deposit__description__information, #ETF .sentence__description__information, #Deposit .ipo__description__information, #Deposit .etf__description__information, #Deposit .deposit__description__information, #Deposit .sentence__description__information, #Sentence .ipo__description__information, #Sentence .etf__description__information, #Sentence .deposit__description__information, #Sentence .sentence__description__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 40px 0;
+}
+#IPO .ipo__description__information__unit, #IPO .etf__description__information__unit, #IPO .deposit__description__information__unit, #IPO .sentence__description__information__unit, #ETF .ipo__description__information__unit, #ETF .etf__description__information__unit, #ETF .deposit__description__information__unit, #ETF .sentence__description__information__unit, #Deposit .ipo__description__information__unit, #Deposit .etf__description__information__unit, #Deposit .deposit__description__information__unit, #Deposit .sentence__description__information__unit, #Sentence .ipo__description__information__unit, #Sentence .etf__description__information__unit, #Sentence .deposit__description__information__unit, #Sentence .sentence__description__information__unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 70px 0 0;
+}
+#IPO .ipo__description__information__unit p, #IPO .etf__description__information__unit p, #IPO .deposit__description__information__unit p, #IPO .sentence__description__information__unit p, #ETF .ipo__description__information__unit p, #ETF .etf__description__information__unit p, #ETF .deposit__description__information__unit p, #ETF .sentence__description__information__unit p, #Deposit .ipo__description__information__unit p, #Deposit .etf__description__information__unit p, #Deposit .deposit__description__information__unit p, #Deposit .sentence__description__information__unit p, #Sentence .ipo__description__information__unit p, #Sentence .etf__description__information__unit p, #Sentence .deposit__description__information__unit p, #Sentence .sentence__description__information__unit p {
+  font-size: 6rem;
+  color: #72BF44;
+  font-weight: 300;
+  padding: 0;
+}
+#IPO .ipo__description__information__unit span, #IPO .etf__description__information__unit span, #IPO .deposit__description__information__unit span, #IPO .sentence__description__information__unit span, #ETF .ipo__description__information__unit span, #ETF .etf__description__information__unit span, #ETF .deposit__description__information__unit span, #ETF .sentence__description__information__unit span, #Deposit .ipo__description__information__unit span, #Deposit .etf__description__information__unit span, #Deposit .deposit__description__information__unit span, #Deposit .sentence__description__information__unit span, #Sentence .ipo__description__information__unit span, #Sentence .etf__description__information__unit span, #Sentence .deposit__description__information__unit span, #Sentence .sentence__description__information__unit span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #E5E5E5;
+}
+#IPO .ipo__description a, #IPO .etf__description a, #IPO .deposit__description a, #IPO .sentence__description a, #ETF .ipo__description a, #ETF .etf__description a, #ETF .deposit__description a, #ETF .sentence__description a, #Deposit .ipo__description a, #Deposit .etf__description a, #Deposit .deposit__description a, #Deposit .sentence__description a, #Sentence .ipo__description a, #Sentence .etf__description a, #Sentence .deposit__description a, #Sentence .sentence__description a {
+  padding: 14px 0;
+  width: 330px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+#IPO .ipo img, #IPO .etf img, #IPO .deposit img, #IPO .sentence img, #ETF .ipo img, #ETF .etf img, #ETF .deposit img, #ETF .sentence img, #Deposit .ipo img, #Deposit .etf img, #Deposit .deposit img, #Deposit .sentence img, #Sentence .ipo img, #Sentence .etf img, #Sentence .deposit img, #Sentence .sentence img {
+  max-width: 620px;
+  max-height: 833px;
+}
+
+#Awards {
+  background: #F8F8F8;
+}
+#Awards .awards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+#Awards .awards h4 {
+  padding: 140px 0 48px 0;
+  font-size: 3rem;
+  font-weight: 500;
+}
+#Awards .awards p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin: 0;
+  padding: 0 0 80px 0;
+}
+#Awards .awards ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+#Awards .awards ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  width: calc(50% - 20px);
+  margin: 0 0 -60px 0;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#Awards .awards ul li h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+  padding: 20px 0;
+}
+#Awards .awards ul li p {
+  font-size: 1.6rem;
+  color: #000;
+  opacity: 0.6;
+  padding: 0 0 20px 0;
+}
+
+#Safety .safety {
+  padding: 186px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+#Safety .safety h3 {
+  margin: 0;
+  color: #000;
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 0 0 40px 0;
+}
+#Safety .safety__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background: #F8F8F8;
+  border-radius: 10px;
+  padding: 60px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#Safety .safety__description p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 0 40px 0 0;
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+}
+#Safety .safety__description svg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#Invest-form .invest-form {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  padding: 74px 0 0 0;
+}
+#Invest-form .invest-form h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+#Invest-form .invest-form__block input {
+  width: 100%;
+  margin: 0 0 20px 0;
+  border: 1px solid #CCCCCC;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 20px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
+}
+#Invest-form .invest-form__block__password {
+  position: relative;
+  padding: 0 0 20px 0;
+}
+#Invest-form .invest-form__block__password input {
+  margin: 0;
+}
+#Invest-form .invest-form__block__password svg {
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  cursor: pointer;
+}
+#Invest-form .invest-form__block__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 42px 0;
+}
+#Invest-form .invest-form__block__checkbox input[type=checkbox] {
+  display: none;
+}
+#Invest-form .invest-form__block__checkbox .checkbox-block {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  position: relative;
+}
+#Invest-form .invest-form__block__checkbox .checkbox-block svg {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#Invest-form .invest-form__block__checkbox .checkbox-block svg path {
+  fill: #72BF44;
+}
+#Invest-form .invest-form__block__checkbox input[type=checkbox]:checked + label svg {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+#Invest-form .invest-form__block__checkbox .checkbox-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0 0 0 15px;
+  margin: auto 0;
+}
+#Invest-form .invest-form__block__checkbox .checkbox-text a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #72BF44;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+#Invest-form .invest-form__block__checkbox .checkbox-text a:hover {
+  border-bottom: 1px solid #72BF44;
+}
+#Invest-form .invest-form__block a {
+  padding: 17px 0;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
 }

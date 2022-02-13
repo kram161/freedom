@@ -81,6 +81,7 @@ body{
     background: $white;
     opacity: 0;
     transition: $animation;
+    z-index: 3;
     li{
       margin: 10px 15px 10px 0;
       p{
@@ -249,6 +250,8 @@ header{
       a{
         max-width: 280px;
         padding: 14px 0;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
       }
       &__ratings{
         display: flex;
@@ -284,6 +287,306 @@ header{
     }
   }
 }
+#Partners{
+  .partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 140px 0;
+    svg,img{
+      margin:0 22.5px;
+    }
+  }
+}
+#Quick-start{
+  .quick-start{
+    display: flex;
+    justify-content: center;
+    img{
+      margin: 0 100px 0 0;
+      max-width: 412px;
+      max-height: 522px;
+    }
+    &__description{
+      h3{
+        font-size: 6.0rem;
+        color:$black;
+        font-weight: 400;
+        margin: 0;
+        padding: 71px 0 40px 0;
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        li{
+          display: flex;
+          font-size: 2.4rem;
+          color:$black;
+          font-weight: 400;
+          padding: 0 0 20px 0;
+        }
+      }
+      a{
+        margin: 50px 0 0 0;
+        padding: 14px 0;
+        width: 330px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}
+#IPO,#ETF,#Deposit,#Sentence{
+  .ipo,.etf,.deposit,.sentence{
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 140px 0 0 0;
+    &__description{
+      h3,p{
+        font-size: 6.0rem;
+        font-weight: 400;
+        color: $black;
+        margin: 0;
+        padding: 0 0 40px 0;
+        span{
+          color:$green;
+        }
+      }
+      p{
+        font-size: 2.4rem;
+        a{
+          font-size: 2.4rem;
+          color: $green;
+          text-decoration: none;
+          padding: 0;
+        }
+        a:hover{
+          border-bottom: 1px solid $green;
+        }
+      }
+      &__information{
+        display: flex;
+        padding: 0 0 40px 0;
+        &__unit{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin: 0 70px 0 0;
+          p{
+            font-size: 6.0rem;
+            color: $green;
+            font-weight: 300;
+            padding: 0;
+          }
+          span{
+            font-size: 1.8rem;
+            font-weight: 400;
+            color:$grey;
+          }
+        }
+      }
+      a{
+        padding: 14px 0;
+        width: 330px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+    }
+    img{
+      max-width: 620px;
+      max-height: 833px;
+    }
+  }
+}
+#Awards{
+  background: $light-grey;
+  .awards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h4{
+      padding: 140px 0 48px 0;
+      font-size: 3.0rem;
+      font-weight: 500;
+    }
+    p{
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      margin: 0;
+      padding: 0 0 80px 0;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      li{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        background: #fff;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        width: calc(50% - 20px);
+        margin: 0 0 -60px 0;
+        padding: 40px;
+        box-sizing: border-box;
+        h4{
+          font-size: 2.4rem;
+          font-weight: 500;
+          color:$black;
+          margin:0;
+          padding: 20px 0;
+        }
+        p{
+          font-size: 1.6rem;
+          color:$black;
+          opacity: 0.6;
+          padding: 0 0 20px 0;
+        }
+      }
+    }
+  }
+}
+#Safety{
+  .safety{
+    padding: 186px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h3{
+      margin: 0;
+      color:$black;
+      font-size: 4.0rem;
+      font-weight: 500;
+      padding: 0 0 40px 0;
+    }
+    &__description{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background: $light-grey;
+      border-radius: 10px;
+      padding: 60px;
+      text-align: left;
+      box-sizing: border-box;
+      p{
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 0 40px 0 0;
+        margin:0;
+        align-self: center;
+        width: 80%;
+      }
+      svg{
+        align-self: center;
+      }
+    }
+  }
+}
+#Invest-form{
+  .invest-form{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    text-align: center;
+    padding: 74px 0 0 0;
+    h3{
+      font-size: 3.0rem;
+      font-weight: 500;
+      margin:0;
+      padding: 0 0 40px 0;
+    }
+    &__block{
+      input{
+        width: 100%;
+        margin:0 0 20px 0;
+        border: 1px solid #CCCCCC;
+        color:$black;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 20px 14px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        outline: none;
+      }
+      &__password{
+        position: relative;
+        padding: 0 0 20px 0;
+        input{
+          margin:0;
+        }
+        svg{
+          position: absolute;
+          top:18px;
+          right: 14px;
+          cursor: pointer;
+        }
+      }
+      &__checkbox{
+        display: flex;
+        padding: 0 0 42px 0;
+        input[type=checkbox]{
+          display: none;
+        }
+        .checkbox-block{
+          display: block;
+          width: 24px;
+          height: 24px;
+          border:1px solid #cccccc;
+          border-radius: 3px;
+          position: relative;
+          svg{
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+            transition: $animation;
+            path{
+              fill:$green;
+            }
+          }
+        }
+        input[type="checkbox"]:checked + label{
+          svg{
+            transition: $animation;
+            opacity: 1;
+          }
+        }
+        .checkbox-text{
+          font-size: 1.4rem;
+          font-weight: 400;
+          padding: 0 0 0 15px;
+          margin: auto 0;
+          a{
+            font-size: 1.4rem;
+            font-weight: 400;
+            color:$green;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+          }
+          a:hover{
+            border-bottom: 1px solid $green;
+          }
+        }
+      }
+      a{
+        padding: 17px 0;
+        line-height: 2.8rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px){
 
 }
