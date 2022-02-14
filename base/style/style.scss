@@ -19,12 +19,21 @@ $light-grey:#F8F8F8;
 $red:#CC0E00;
 $animation:all 0.3s ease;
 .container{
-  max-width: 1440px;
+  max-width: 1280px;
   padding: 0 25px;
   margin:0 auto;
 }
 body{
   margin: 0;
+
+}
+::-webkit-scrollbar {
+  width: 10px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: $grey;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $green;
 }
 .colored-button,.transparent-button{
   color:$white;
@@ -488,6 +497,7 @@ header{
   }
 }
 #Invest-form{
+  padding: 0 0 140px 0;
   .invest-form{
     max-width: 600px;
     display: flex;
@@ -578,7 +588,8 @@ header{
           }
         }
       }
-      a{
+      button{
+        width: 100%;
         padding: 17px 0;
         line-height: 2.8rem;
         font-size: 1.8rem;
@@ -586,7 +597,250 @@ header{
     }
   }
 }
+footer{
+  background: #ECEFF1;
+  padding: 70px 0;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    hr{
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+      margin: 0;
+      border: 0;
+      border-top: 1px solid #e5e5e5;
+    }
+    &__main{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 40px 0;
+      &__contacts,&__services,&__documents,&__information{
+        h4{
+          font-size: 1.8rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+      &__services,&__documents{
+        width: 20%;
+        ul{
+          display: flex;
+          flex-direction: column;
+          margin:0;
+          padding: 0;
+          li{
+            display: flex;
+            flex-direction: column;
+            margin:0;
+          }
+          li:not(:first-child){
+            margin:20px 0 0 0;
+          }
+        }
+        a{
+          text-decoration: none;
+          color: #000;
+          opacity: 0.6;
+          font-size: 1.6rem;
+          transition: $animation;
+        }
+        a:hover{
+          opacity: 1;
+          transition: $animation;
+        }
+      }
+      &__contacts{
+        width: 30%;
+        ul{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          li{
+            display: flex;
+            a{
+              text-decoration: none;
+              font-size: 1.4rem;
+              color:$green;
+            }
+            a:hover{
+              border-bottom: 1px solid $green;
+              margin:0 0 -1px 0;
+            }
+            svg{
+              width: 12px;
+              height: 14px;
+              margin:auto 10px auto 0;
+            }
+            p{
+              font-size: 1.4rem;
+              font-weight: 100;
+              margin:0;
+              span{
+                font-weight: 700;
+              }
+              a{
+                text-decoration: none;
+                color:$black;
+              }
+              a:hover{
+                border:none;
+                margin:0;
+              }
+            }
+          }
+          li:not(:first-child){
+            margin:10px 0 0 0;
+          }
+        }
+        hr{
+          box-sizing: content-box;
+          height: 0;
+          overflow: visible;
+          margin: 20px 0;
+          border: 0;
+          border-top: 1px solid #e5e5e5;
+        }
+      }
+      &__information{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__payment-methods{
+          &__logo{
+            svg{
+              border: 1px solid $grey;
+              padding: 2px 10px;
+              margin: 0 20px 0 0;
+            }
+            svg:last-child{
+              path{
+                fill:$green;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__information{
+      width: 100%;
+      display: flex;
+      svg{
 
+        margin: auto 0;
+        width: 25%;
+      }
+      &__text{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 40px;
+        width: 60%;
+        margin:auto 0;
+        line-height: 1.5;
+        p{
+          font-size: 1.25rem;
+          color:#999;
+          margin: 0 0 20px 0;
+        }
+      }
+      &__licenses{
+        padding: 0 0 0 40px;
+        width: 20%;
+        a{
+          background: $white;
+          display: flex;
+          flex-direction: column;
+          padding: 50px 30px;
+          text-decoration: none;
+          transition: $animation;
+          svg{
+            margin:0;
+          }
+          p{
+            font-size: 1.4rem;
+            margin:20px 0 0 0;
+            color:$black;
+          }
+          span{
+            opacity: 0.6;
+            font-size: 1.4rem;
+            margin:10px 0 0 0;
+            color:$black;
+          }
+        }
+        a:hover{
+          box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+          transition: $animation;
+        }
+      }
+    }
+    &__description{
+      margin: 40px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      &__authorization{
+        &__social-networks{
+          display: flex;
+          a{
+            display: block;
+            padding: 16px;
+            background: #f5f5f5;
+            border-radius: 5px;
+            margin:0 30px 0 0;
+            transition: $animation;
+            svg{
+              width: 18px;
+              height: 18px;
+              transition: $animation;
+              path{
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+          a:hover{
+            transition: $animation;
+            background: $white;
+            svg{
+              path{
+                transition: $animation;
+                fill:$green;
+              }
+            }
+          }
+        }
+
+      }
+      &__text{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin:auto 0;
+        line-height: 1.5;
+        p{
+          font-size: 1.25rem;
+          color:#999;
+          margin: 0 0 20px 0;
+        }
+      }
+      &__authorization,&__download{
+        width: 25%;
+        h4{
+          font-size: 1.75rem;
+          font-weight: 700;
+          margin:0 0 20px 0;
+        }
+      }
+      &__download{
+        padding: 0 0 0 40px;
+        &__buttons{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1200px){
 
 }
