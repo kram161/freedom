@@ -1557,4 +1557,17 @@ footer .footer__description__download__buttons {
   footer .footer__main__information__reliability {
     padding: 0 0 20px 0;
   }
+
+  #Awards .awards ul {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 0 0 -60px 0;
+    height: auto;
+  }
+  #Awards .awards ul li {
+    padding: 30px;
+    width: 260px;
+    height: auto;
+    margin: 0 10px 0 0;
+  }
 }

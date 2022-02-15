@@ -1373,6 +1373,22 @@ footer{
       }
     }
   }
+  #Awards{
+    .awards{
+      ul{
+        overflow-y: hidden;
+        overflow-x: scroll;
+        margin:0 0 -60px 0;
+        height: auto;
+        li{
+          padding: 30px;
+          width: 260px;
+          height: auto;
+          margin:0 10px 0 0;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 320px){
 
