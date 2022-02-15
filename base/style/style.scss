@@ -28,8 +28,8 @@ body{
 
 }
 ::-webkit-scrollbar {
-  width: 10px; /* ширина для вертикального скролла */
-  height: 8px; /* высота для горизонтального скролла */
+  width: 10px;
+  height: 8px;
   background-color: $grey;
 }
 ::-webkit-scrollbar-thumb {
@@ -82,7 +82,7 @@ body{
     }
   }
   .submenu{
-    display: flex;
+    display: none !important;
     flex-direction: column;
     position: absolute;
     top:100%;
@@ -104,12 +104,17 @@ body{
 }
 .dropdown-list:hover{
   .submenu{
+    display: flex !important;
     opacity: 1;
     transition: $animation;
   }
 }
 header{
   background: $light-grey;
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  border-bottom: 1px solid $grey;
   .header{
     display: flex;
     justify-content: space-between;
@@ -189,8 +194,9 @@ header{
           font-size: 0.8rem;
           border-radius: 20px;
           padding: 3px 4.5px;
+          transition: $animation;
         }
-        svg{
+        img{
           transition: $animation;
         }
       }
@@ -202,15 +208,20 @@ header{
     }
     &__cart:hover{
       .header__cart__logo{
-        svg{
+        img,span{
           transform: scale(1.2,1.2);
           transition: $animation;
         }
       }
     }
+    &__burger-menu{
+      display: none;
+    }
   }
 }
 #Menu{
+  position: relative;
+  top:82px;
   border-top:1px solid $grey;
   border-bottom: 1px solid $grey;
   .menu{
@@ -232,6 +243,9 @@ header{
       }
     }
   }
+}
+#Mobile-menu{
+  display: none;
 }
 #Investments{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F3F7F9 100%);
@@ -444,6 +458,10 @@ header{
         margin: 0 0 -60px 0;
         padding: 40px;
         box-sizing: border-box;
+        img{
+          width: 101px;
+          height: 96px;
+        }
         h4{
           font-size: 2.4rem;
           font-weight: 500;
@@ -531,7 +549,7 @@ header{
         input{
           margin:0;
         }
-        svg{
+        img{
           position: absolute;
           top:18px;
           right: 14px;
@@ -844,13 +862,194 @@ footer{
   }
 }
 @media screen and (max-width: 1200px){
-  
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: $grey;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $green;
+  }
+  .container{
+    padding: 0 20px;
+  }
+  header{
+    border-bottom: 1px solid $grey;
+    .header{
+      &__logo{
+        flex: 1;
+      }
+      &__search{
+        display: none;
+      }
+      &__burger-menu{
+        display: block;
+        margin:auto 0;
+        position: relative;
+        &__button{
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin:0 25px;
+          height: 17px;
+          width: 20px;
+          position: relative;
+          span{
+            background: $black;
+            display: block;
+            height: 2px;
+            transition: $animation;
+          }
+          span:nth-child(1),span:nth-child(3){
+            width: 100%;
+            transform-origin: left;
+          }
+          span:nth-child(2){
+            width: 16px;
+          }
+          p{
+            position: absolute;
+            color:$white;
+            background:$red;
+            margin: 0;
+            top:-8px;
+            right: -6px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            padding: 3px 4.5px;
+            transition: $animation;
+          }
+        }
+        &__button-active{
+          span:nth-child(1),span:nth-child(3){
+            width: 100%;
+            transform-origin: left;
+          }
+          span:nth-child(1){
+            transform: rotate(45deg);
+          }
+          span:nth-child(2){
+            width: 16px;
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          span:nth-child(3){
+            width: 100%;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+  #Menu{
+    display: none;
+  }
+  #Mobile-menu{
+    display: block;
+    background: rgb(0, 0, 0 ,0.7);
+    height: calc(100% - 78px);
+    width: 100%;
+    position: fixed;
+    top:78px;
+    z-index: 5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: $animation;
+    .mobile-menu{
+      background: $white;
+      opacity: 1;
+      color: $black;
+      padding: 0 20px;
+      &__search{
+        position: relative;
+        padding: 20px 0;
+        input{
+          background: #fff;
+          border: 1px solid #B4DFA2;
+          color: #000;
+          font-size: 1.4rem;
+          padding: 12px 16px;
+          border-radius: 4px;
+          outline: none;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 100%;
+          margin: 0 20px 0 0;
+        }
+        img{
+          position: absolute;
+          top:33px;
+          right: 16px;
+        }
+      }
+      &__list{
+        padding: 0 0 20px 0;
+        ul{
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          li{
+            display: flex;
+            a{
+              color: $black;
+              text-decoration: none;
+              font-size: 1.6rem;
+              font-weight: 400;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+      &__language{
+        background: $grey;
+        margin:0 -20px 0 -20px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        p{
+          color: $black;
+          text-decoration: none;
+          font-size: 1.6rem;
+          font-weight: 400;
+          padding: 10px 0;
+        }
+        &__block{
+          font-size: 1.6rem;
+          display: flex;
+          height: 18px;
+          margin:auto 0;
+          cursor: pointer;
+          img{
+            height: 18px;
+            width: 24px;
+          }
+          span{
+            margin: auto 5px;
+          }
+          img:nth-child(3){
+            height: 15px;
+            width: 15px;
+            position: relative;
+            top:2px;
+          }
+        }
+      }
+    }
+  }
+  #Mobile-menu{
+    &.mobile-menu-active{
+      transform:translateY(0);
+    }
+  }
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 768px){
-
+  .container{
+    padding: 0 18px;
+  }
 }
 @media screen and (max-width: 576px){
 
