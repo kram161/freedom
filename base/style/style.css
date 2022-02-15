@@ -334,6 +334,7 @@ header .header__burger-menu {
 }
 #Investments .investments__description p {
   font-size: 2.4rem;
+  line-height: 2.8rem;
 }
 #Investments .investments__description a {
   max-width: 280px;
@@ -1043,9 +1044,15 @@ footer .footer__description__download__buttons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1200px) {
+  :root {
+    font-size: 8px;
+  }
+
   ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -1180,12 +1187,11 @@ footer .footer__description__download__buttons {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    margin: 0 20px 0 0;
   }
   #Mobile-menu .mobile-menu__search img {
     position: absolute;
-    top: 33px;
-    right: 16px;
+    top: 30px;
+    right: 10px;
   }
   #Mobile-menu .mobile-menu__list {
     padding: 0 0 20px 0;
@@ -1252,14 +1258,303 @@ footer .footer__description__download__buttons {
     position: relative;
     top: 2px;
   }
-
+  #Mobile-menu .mobile-menu__buttons {
+    display: none;
+  }
   #Mobile-menu.mobile-menu-active {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+
+  #Investments .investments__img img {
+    max-width: 500px;
+  }
+
+  #IPO, #ETF, #Deposit, #Sentence {
+    width: 100%;
+  }
+  #IPO .ipo, #IPO .etf, #IPO .deposit, #IPO .sentence, #ETF .ipo, #ETF .etf, #ETF .deposit, #ETF .sentence, #Deposit .ipo, #Deposit .etf, #Deposit .deposit, #Deposit .sentence, #Sentence .ipo, #Sentence .etf, #Sentence .deposit, #Sentence .sentence {
+    width: 100%;
+  }
+  #IPO .ipo img, #IPO .etf img, #IPO .deposit img, #IPO .sentence img, #ETF .ipo img, #ETF .etf img, #ETF .deposit img, #ETF .sentence img, #Deposit .ipo img, #Deposit .etf img, #Deposit .deposit img, #Deposit .sentence img, #Sentence .ipo img, #Sentence .etf img, #Sentence .deposit img, #Sentence .sentence img {
+    max-width: 50%;
+    max-height: 833px;
+  }
+}
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 7px;
+  }
+
+  #Investments .investments__description__ratings {
+    display: none;
+  }
+
+  #Partners .partners {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 40px 0;
+  }
+
+  #Quick-start .quick-start {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #Quick-start .quick-start img {
+    max-width: 312px;
+    max-height: 395px;
+  }
+  #Quick-start .quick-start__description h3 {
+    padding: 40px 0 20px 0;
+  }
+  #Quick-start .quick-start__description ul li {
+    padding: 0 0 12px 0;
+  }
+  #Quick-start .quick-start__description a {
+    margin: 20px 0 0 0;
+  }
+
+  #IPO, #ETF, #Deposit, #Sentence {
+    border-bottom: 1px solid #F0F0F0;
+  }
+  #IPO .ipo, #IPO .etf, #IPO .deposit, #IPO .sentence, #ETF .ipo, #ETF .etf, #ETF .deposit, #ETF .sentence, #Deposit .ipo, #Deposit .etf, #Deposit .deposit, #Deposit .sentence, #Sentence .ipo, #Sentence .etf, #Sentence .deposit, #Sentence .sentence {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 140px 0 0 0;
+  }
+  #IPO .ipo__description, #IPO .etf__description, #IPO .deposit__description, #IPO .sentence__description, #ETF .ipo__description, #ETF .etf__description, #ETF .deposit__description, #ETF .sentence__description, #Deposit .ipo__description, #Deposit .etf__description, #Deposit .deposit__description, #Deposit .sentence__description, #Sentence .ipo__description, #Sentence .etf__description, #Sentence .deposit__description, #Sentence .sentence__description {
+    padding: 0 0 20px 0;
+  }
+  #IPO .ipo__description h3, #IPO .ipo__description p, #IPO .etf__description h3, #IPO .etf__description p, #IPO .deposit__description h3, #IPO .deposit__description p, #IPO .sentence__description h3, #IPO .sentence__description p, #ETF .ipo__description h3, #ETF .ipo__description p, #ETF .etf__description h3, #ETF .etf__description p, #ETF .deposit__description h3, #ETF .deposit__description p, #ETF .sentence__description h3, #ETF .sentence__description p, #Deposit .ipo__description h3, #Deposit .ipo__description p, #Deposit .etf__description h3, #Deposit .etf__description p, #Deposit .deposit__description h3, #Deposit .deposit__description p, #Deposit .sentence__description h3, #Deposit .sentence__description p, #Sentence .ipo__description h3, #Sentence .ipo__description p, #Sentence .etf__description h3, #Sentence .etf__description p, #Sentence .deposit__description h3, #Sentence .deposit__description p, #Sentence .sentence__description h3, #Sentence .sentence__description p {
+    padding: 0 0 20px 0;
+  }
+  #IPO .ipo__description__information, #IPO .etf__description__information, #IPO .deposit__description__information, #IPO .sentence__description__information, #ETF .ipo__description__information, #ETF .etf__description__information, #ETF .deposit__description__information, #ETF .sentence__description__information, #Deposit .ipo__description__information, #Deposit .etf__description__information, #Deposit .deposit__description__information, #Deposit .sentence__description__information, #Sentence .ipo__description__information, #Sentence .etf__description__information, #Sentence .deposit__description__information, #Sentence .sentence__description__information {
+    padding: 0 0 20px 0;
+  }
+  #IPO .ipo__description__information__unit p, #IPO .etf__description__information__unit p, #IPO .deposit__description__information__unit p, #IPO .sentence__description__information__unit p, #ETF .ipo__description__information__unit p, #ETF .etf__description__information__unit p, #ETF .deposit__description__information__unit p, #ETF .sentence__description__information__unit p, #Deposit .ipo__description__information__unit p, #Deposit .etf__description__information__unit p, #Deposit .deposit__description__information__unit p, #Deposit .sentence__description__information__unit p, #Sentence .ipo__description__information__unit p, #Sentence .etf__description__information__unit p, #Sentence .deposit__description__information__unit p, #Sentence .sentence__description__information__unit p {
+    padding: 0;
+  }
+  #IPO .ipo img, #IPO .etf img, #IPO .deposit img, #IPO .sentence img, #ETF .ipo img, #ETF .etf img, #ETF .deposit img, #ETF .sentence img, #Deposit .ipo img, #Deposit .etf img, #Deposit .deposit img, #Deposit .sentence img, #Sentence .ipo img, #Sentence .etf img, #Sentence .deposit img, #Sentence .sentence img {
+    max-width: 50%;
+    max-height: 833px;
+  }
+
+  #Awards .awards {
+    text-align: left;
+  }
+  #Awards .awards h4 {
+    padding: 70px 0 20px 0;
+  }
+  #Awards .awards p {
+    padding: 0 0 40px 0;
+  }
+
+  #Safety .safety {
+    padding: 130px 0 0 0;
+  }
+  #Safety .safety h3 {
+    padding: 0 0 20px 0;
+  }
+  #Safety .safety__description {
+    padding: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #Safety .safety__description p {
+    text-align: left;
+    line-height: 2.4rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+    padding: 30px 0 0 0;
+  }
+  #Safety .safety__description img {
+    max-width: 144px;
+  }
+
+  #Invest-form .invest-form {
+    padding: 70px 0 0 0;
+  }
+
+  footer .footer__main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer__information__text {
+    width: 50%;
+  }
+  footer .footer__description__authorization__social-networks a {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 18px;
+  }
+
+  header .header__buttons {
+    display: none;
+  }
+
+  #Mobile-menu .mobile-menu__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #Mobile-menu .mobile-menu__buttons a {
+    width: 45%;
+    padding: 15px 0;
+    border: 1px solid #72BF44;
+  }
+
+  #Investments .investments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 140px 0 0 0;
+    min-height: auto;
+  }
+  #Investments .investments__description {
+    padding: 0 0 40px 0;
+  }
+  #Investments .investments__img {
+    position: relative;
+  }
+  #Investments .investments__img img:nth-child(1) {
+    position: relative;
+    max-width: 100%;
+  }
+  #Investments .investments__img img:nth-child(2) {
+    position: absolute;
+  }
+
+  #Partners .partners img {
+    margin: 0 20px 20px 20px;
+  }
+
+  #Awards .awards ul li {
+    padding: 30px;
+  }
+  #Awards .awards ul li svg {
+    max-width: 100%;
+  }
+
+  footer .footer__main__contacts, footer .footer__main__services, footer .footer__main__documents, footer .footer__main__information {
+    width: 50%;
+  }
+  footer .footer__main__services, footer .footer__main__documents {
+    padding: 0 0 20px 0;
+  }
+  footer .footer__main__contacts {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer .footer__main__information {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  footer .footer__information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0;
+  }
+  footer .footer__information svg {
+    display: none;
+  }
+  footer .footer__information__text, footer .footer__information__licenses {
+    width: 100%;
+    padding: 0;
+  }
+  footer .footer__information__text svg, footer .footer__information__licenses svg {
+    display: block;
+  }
+  footer .footer__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer__description__authorization {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 0 20px 0;
+  }
+  footer .footer__description__download {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0 0 20px 0;
+    width: 100%;
+  }
+  footer .footer__description__download__buttons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .footer__description__download__buttons a {
+    margin: 0 10px 0 0;
+  }
+  footer .footer__description__text {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .header__logo {
+    max-width: 50%;
+  }
+  header .header__logo img {
+    width: 100%;
+  }
+  header .header__burger-menu__button {
+    margin: auto 0 auto auto;
+  }
+
+  #Mobile-menu {
+    top: 67px;
+    height: calc(100% - 67px);
+  }
+  #Quick-start .quick-start__description a {
+    width: 100%;
+  }
+
+  #IPO .ipo__description a, #IPO .etf__description a, #IPO .deposit__description a, #IPO .sentence__description a, #ETF .ipo__description a, #ETF .etf__description a, #ETF .deposit__description a, #ETF .sentence__description a, #Deposit .ipo__description a, #Deposit .etf__description a, #Deposit .deposit__description a, #Deposit .sentence__description a, #Sentence .ipo__description a, #Sentence .etf__description a, #Sentence .deposit__description a, #Sentence .sentence__description a {
+    width: 100%;
+  }
+
+  footer .footer__main__contacts, footer .footer__main__information {
+    width: 100%;
+  }
+  footer .footer__main__services, footer .footer__main__documents {
+    width: 50%;
+  }
+  footer .footer__main__information__reliability {
+    padding: 0 0 20px 0;
   }
 }
