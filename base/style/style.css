@@ -512,6 +512,7 @@ header .header__cart:hover .header__cart__logo svg {
   padding: 140px 0 48px 0;
   font-size: 3rem;
   font-weight: 500;
+  margin: 0;
 }
 #Awards .awards p {
   font-size: 1.8rem;
