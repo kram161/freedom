@@ -1139,7 +1139,7 @@ footer{
         }
       }
       img{
-        max-width: 50%;
+        max-width: 100%;
         max-height: 833px;
       }
     }
@@ -1335,6 +1335,9 @@ footer{
           width: 100%;
         }
       }
+      &__cart{
+        margin:auto 20px auto auto;
+      }
       &__burger-menu{
         &__button{
           margin:auto 0 auto auto;
@@ -1370,7 +1373,8 @@ footer{
     .ipo,.etf,.deposit,.sentence{
       &__description{
         a{
-          width: 100%;
+          width: 200px;
+          padding: 11px 0;
         }
       }
     }
@@ -1394,16 +1398,22 @@ footer{
   }
   #Awards{
     .awards{
-      ul{
-        overflow-y: hidden;
+      height: 100%;
+      nav{
         overflow-x: scroll;
+        overflow-y: hidden;
         margin:0 0 -60px 0;
-        height: auto;
-        li{
-          padding: 30px;
-          width: 260px;
-          height: auto;
-          margin:0 10px 0 0;
+        height: 420px;
+        ul{
+          width: 550px;
+          overflow-y: hidden;
+          height: 420px;
+          li{
+            padding: 30px;
+            width: 260px;
+            height: auto;
+            margin:0 10px 0 0;
+          }
         }
       }
     }
