@@ -1313,6 +1313,7 @@ footer .footer__description__download__buttons {
             justify-content: flex-start;
   }
   #Quick-start .quick-start img {
+    margin: 0;
     max-width: 312px;
     max-height: 395px;
   }
@@ -1542,6 +1543,13 @@ footer .footer__description__download__buttons {
   #Mobile-menu {
     top: 67px;
     height: calc(100% - 67px);
+  }
+  #Partners .partners {
+    margin: 70px 0 140px 0;
+  }
+
+  #Quick-start .quick-start img {
+    width: 100%;
   }
   #Quick-start .quick-start__description a {
     width: 100%;

@@ -1101,6 +1101,7 @@ footer{
       flex-direction: column;
       justify-content: flex-start;
       img{
+        margin: 0;
         max-width: 312px;
         max-height: 395px;
       }
@@ -1347,8 +1348,16 @@ footer{
 
     }
   }
+  #Partners{
+    .partners{
+      margin:70px 0 140px 0;
+    }
+  }
   #Quick-start{
     .quick-start{
+      img{
+        width: 100%;
+      }
       &__description{
         a{
           width: 100%;
