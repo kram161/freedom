@@ -301,8 +301,11 @@ header{
         max-width: 804px;
         max-height: 624px;
       }
-      img:nth-child(1){
-        z-index: 2;
+      picture{
+        img{
+          z-index: 2;
+          max-width:500px;
+        }
       }
       img:nth-child(2){
         right: 52px;
@@ -1050,8 +1053,14 @@ footer{
   #Investments{
     .investments{
       &__img{
-        img{
+        picture{
+          img{
+            min-width: 500px;
+          }
+        }
+        img:nth-child(2){
           max-width:500px;
+          display: none;
         }
       }
     }
@@ -1231,12 +1240,12 @@ footer{
       }
       &__img{
         position: relative;
-        img:nth-child(1){
-          position: relative;
-          max-width: 100%;
-        }
-        img:nth-child(2){
-          position: absolute;
+        picture{
+          img{
+            position: relative;
+            min-width: auto;
+            width: 100%;
+          }
         }
       }
     }
