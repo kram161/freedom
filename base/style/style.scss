@@ -224,6 +224,7 @@ header{
   top:82px;
   border-top:1px solid $grey;
   border-bottom: 1px solid $grey;
+  z-index: 1;
   .menu{
     nav{
       ul{
