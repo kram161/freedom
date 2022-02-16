@@ -278,6 +278,7 @@ header .header__burger-menu {
   top: 82px;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
+  z-index: 1;
 }
 #Menu .menu nav ul {
   display: -webkit-box;
@@ -1272,7 +1273,6 @@ footer .footer__description__download__buttons {
   }
   #Investments .investments__img img:nth-child(2) {
     max-width: 500px;
-    display: none;
   }
 
   #IPO, #ETF, #Deposit, #Sentence {
@@ -1282,7 +1282,6 @@ footer .footer__description__download__buttons {
     width: 100%;
   }
   #IPO .ipo img, #IPO .etf img, #IPO .deposit img, #IPO .sentence img, #ETF .ipo img, #ETF .etf img, #ETF .deposit img, #ETF .sentence img, #Deposit .ipo img, #Deposit .etf img, #Deposit .deposit img, #Deposit .sentence img, #Sentence .ipo img, #Sentence .etf img, #Sentence .deposit img, #Sentence .sentence img {
-    max-width: 50%;
     max-height: 833px;
   }
 }
@@ -1451,6 +1450,9 @@ footer .footer__description__download__buttons {
     position: relative;
     min-width: auto;
     width: 100%;
+  }
+  #Investments .investments__img img:nth-child(2) {
+    display: none;
   }
 
   #Partners .partners img {

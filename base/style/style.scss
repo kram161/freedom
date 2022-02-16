@@ -1061,7 +1061,6 @@ footer{
         }
         img:nth-child(2){
           max-width:500px;
-          display: none;
         }
       }
     }
@@ -1071,7 +1070,6 @@ footer{
     .ipo,.etf,.deposit,.sentence{
       width: 100%;
       img{
-        max-width: 50%;
         max-height: 833px;
       }
     }
@@ -1248,6 +1246,9 @@ footer{
             min-width: auto;
             width: 100%;
           }
+        }
+        img:nth-child(2){
+          display: none;
         }
       }
     }
